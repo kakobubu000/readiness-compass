@@ -105,7 +105,7 @@
 
   <div id="screen-coach" class="card hidden">
     <h2>TA coach view: cohort overview</h2>
-    <p style="color:var(--muted); font-size:14px; margin-top:6px;">What the CSBHTAC coaching team sees across a cohort (fictional systems shown). Profiles update as systems reassess, so growth is visible over time.</p>
+    <p style="color:var(--muted); font-size:14px; margin-top:6px;">What the CSBHTAC coaching team sees across a cohort (sample cohort for illustration). Profiles update as systems reassess, so growth is visible over time.</p>
     <table>
       <tr><th>Health system</th><th>Leadership</th><th>Data sharing</th><th>Operations</th><th>TA focus</th></tr>
       <tr><td>Palmetto Children's Health</td><td><span class="chip lead">Leading</span></td><td><span class="chip est">Establishing</span></td><td><span class="chip dev">Developing</span></td><td>Data agreements</td></tr>
@@ -270,7 +270,7 @@ function fallbackCopy(text, done){
   document.body.removeChild(ta); done();
 }
 function copyCohort(btn){
-  const lines = ["CSBHTAC TA cohort overview (draft prototype, fictional systems)", ""];
+  const lines = ["CSBHTAC TA cohort overview (draft prototype, sample cohort for illustration)", ""];
   document.querySelectorAll("#screen-coach table tr").forEach((tr, i) => {
     const cells = Array.from(tr.children).map(td => td.textContent.trim());
     if (i === 0) return;
