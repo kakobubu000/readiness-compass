@@ -70,7 +70,7 @@
 
   <div id="screen-start" class="card">
     <h2>Where is your system on the path to school partnership?</h2>
-    <p style="margin-top:10px; color:var(--muted); font-size:15px;">A brief self-assessment for health systems building partnerships with schools. Answer a short set of questions and receive an instant readiness profile that highlights strengths, growth opportunities, and where coaching support can help.</p>
+    <p style="margin-top:10px; color:var(--muted); font-size:15px;">A brief self-assessment for health systems building partnerships with schools. You will respond to a short set of statements about your system's current partnership practices, and receive an instant readiness profile that highlights strengths, growth opportunities, and where coaching support can help.</p>
     <p style="margin-top:10px; color:var(--muted); font-size:15px;">This is not a pass or fail test. Every system starts somewhere, and the profile simply shows where support will be most useful.</p>
     <div class="center"><button class="btn" onclick="start()">Begin</button></div>
   </div>
@@ -210,7 +210,7 @@ function renderQ(){
   const q = items[idx];
   document.getElementById("qdomain").textContent = DOMAINS[q.d] + (idx >= P1.length ? " (partnership items)" : "");
   document.getElementById("qtext").textContent = q.t;
-  document.getElementById("qcount").textContent = "Question " + (idx+1) + " of " + items.length;
+  document.getElementById("qcount").textContent = "Item " + (idx+1) + " of " + items.length;
   const pct = Math.round(((idx) / items.length) * 100);
   document.getElementById("qpct").textContent = pct + "%";
   document.getElementById("pfill").style.width = Math.max(pct, 6) + "%";
